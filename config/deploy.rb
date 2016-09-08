@@ -5,6 +5,7 @@ set :scm                     , :git
 set :repo_url                , 'git@github.com:DesafioLatam/EjemploCapistrano2.git'
 set :keep_releases           , 5
 set :ssh_options             , { forward_agent: true, user: fetch(:user) , keys: %w(~/.ssh/id_rsa.pub) }
+set :rails_env               , :production
 
 ## Linked Files & Directories (Default None):
 set :linked_files, %w{config/secrets.yml .env}
